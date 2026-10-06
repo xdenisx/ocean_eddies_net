@@ -1,0 +1,2 @@
+# Run from the repository root; includes all external model backends.
+-e .[all]

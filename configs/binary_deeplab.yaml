@@ -1,0 +1,41 @@
+# Paths are relative to the working directory, not this YAML file.
+images_dir: data/train/images
+masks_dir: data/train/masks
+output_dir: runs/deeplab_binary
+architecture: deeplabv3plus_resnet101
+backend: smp
+pretrained: true
+in_channels: 1
+class_values: [0, 255]
+class_names: [background, eddy]
+ignore_values: [65535]
+unknown_mask_policy: error
+normalize: percentile
+zero_is_nodata: true
+# For outputs from eddy-preprocess, change the line above to false.
+tile_size: 512
+stride: 512
+split_mode: scene
+val_fraction: 0.2
+seed: 42
+min_valid_fraction: 0.01
+min_positive_fraction: 0.0
+augment_level: heavy
+allow_flips: true
+loss: focal_tversky
+tversky_alpha: 0.2
+tversky_beta: 0.8
+focal_tversky_gamma: 1.33
+batch_size: 2
+num_workers: 0
+freeze_batchnorm: true
+drop_last: true
+epochs: 150
+patience: 20
+early_stop_monitor: val_iou
+min_delta: 0.001
+lr: 0.0001
+weight_decay: 0.0001
+amp: true
+accumulation_steps: 1
+device: auto

@@ -1,0 +1,24 @@
+images_dir: demo/images
+masks_dir: demo/masks
+output_dir: runs/smoke
+architecture: tiny_unet
+backend: native
+pretrained: false
+in_channels: 1
+class_values: [0, 100, 255]
+class_names: [background, class_1, class_2]
+ignore_values: [65535]
+tile_size: 64
+stride: 32
+split_mode: scene
+val_fraction: 0.25
+min_positive_fraction: 0.0
+augment_level: heavy
+allow_flips: false
+loss: dice_focal
+batch_size: 2
+num_workers: 0
+epochs: 2
+patience: 0
+amp: false
+device: cpu

@@ -1,0 +1,74 @@
+[
+  {
+    "path": "legacy/other_versions/clahe_skimage_geotiff_folder.py",
+    "sha256": "af92b7a708af37843179b0d62d74188b695c182aa42863771788fddf6712736e",
+    "bytes": 10369,
+    "stable": false
+  },
+  {
+    "path": "legacy/other_versions/validate_ocean_eddy_segmentation.py",
+    "sha256": "152c5fd1acdb4665b76e436847a0189aa76ec83f5fc799ce1c7df86fe473b941",
+    "bytes": 11701,
+    "stable": false
+  },
+  {
+    "path": "legacy/other_versions/train_ocean_eddy.py",
+    "sha256": "a18ea8ea1afdba51b613c88c591180ec89e0698e2b5e362a892f3b719b104efc",
+    "bytes": 35608,
+    "stable": false
+  },
+  {
+    "path": "legacy/other_versions/infer_ocean_eddy_segmentation.py",
+    "sha256": "a85e56ea23778fcd791ba42594cbc2dc4f71487c6cce3831153d4671fb971bf9",
+    "bytes": 22677,
+    "stable": false
+  },
+  {
+    "path": "legacy/other_versions/infer_ocean_eddy_segmentation_postproc.py",
+    "sha256": "9c0d79065a128a85ca83dac67ae5838bdebfb16a363b2301c5ae3e4a35e344db",
+    "bytes": 29830,
+    "stable": false
+  },
+  {
+    "path": "legacy/other_versions/hist_clahe_geotiff_folder.py",
+    "sha256": "52c3bf9196a573f6157000552c0a166cc4228caf853df2289d4a13b325414ba9",
+    "bytes": 7992,
+    "stable": false
+  },
+  {
+    "path": "legacy/other_versions/train_transunet_eddies_aug.py",
+    "sha256": "09339d8fc391359c5e84b699b83ea079ce123e0864682ef6166f0f1afd88c4cb",
+    "bytes": 39029,
+    "stable": false
+  },
+  {
+    "path": "legacy/other_versions/train_ocean_eddy_segmentation.py",
+    "sha256": "a18ea8ea1afdba51b613c88c591180ec89e0698e2b5e362a892f3b719b104efc",
+    "bytes": 35608,
+    "stable": false
+  },
+  {
+    "path": "legacy/train_ocean_eddy_aug_level.py",
+    "sha256": "195a8b386638997629e16b7a1c12cf2fb0f0a1c318e198dcae13c1b3e8280d5d",
+    "bytes": 38249,
+    "stable": true
+  },
+  {
+    "path": "legacy/other_versions/train_transunet_eddies.py",
+    "sha256": "39eeca079b10ef1c2e85f48097f95d91c01a70dc8603ae60de50ac4079c81b6b",
+    "bytes": 25105,
+    "stable": false
+  },
+  {
+    "path": "legacy/other_versions/train_ocean_eddy_aug_level_bnfix.py",
+    "sha256": "e0e043ede9c99df7163e6e5fc031e8aafd362ac6e90f5b4f7530fbd83a987df7",
+    "bytes": 40516,
+    "stable": false
+  },
+  {
+    "path": "legacy/other_versions/infer_transunet_eddies.py",
+    "sha256": "06b5927f7d61a133d244d71ae03d4f2172bbcf6a4b473ca397dc6819fab288ea",
+    "bytes": 17900,
+    "stable": false
+  }
+]

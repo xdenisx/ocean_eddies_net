@@ -1,0 +1,6 @@
+include README.md README_RU.md CHANGELOG.md NOTICE_RELEASE.md requirements.txt requirements-dev.txt
+recursive-include configs *.yaml
+recursive-include docs *.md *.json *.txt
+recursive-include scripts *.py *.ipynb
+recursive-include tests *.py
+recursive-include legacy *.py *.json *.md

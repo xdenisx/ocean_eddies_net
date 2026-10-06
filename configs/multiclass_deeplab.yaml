@@ -1,0 +1,42 @@
+# Three mutually exclusive PIXEL classes, including background.
+# Change names/codes to match your own annotation legend.
+images_dir: data/train/images
+masks_dir: data/train/masks
+output_dir: runs/deeplab_multiclass
+architecture: deeplabv3plus_resnet101
+backend: smp
+pretrained: true
+in_channels: 1
+class_values: [0, 100, 255]
+class_names: [background, eddy_type_1, eddy_type_2]
+ignore_values: [65535]
+unknown_mask_policy: error
+normalize: percentile
+zero_is_nodata: true
+tile_size: 512
+stride: 512
+split_mode: scene
+val_fraction: 0.2
+seed: 42
+min_valid_fraction: 0.01
+min_positive_fraction: 0.0
+augment_level: heavy
+# Reflections can reverse spiral handedness. Set false for orientation/chirality
+# classes unless you have established that a reflection preserves their labels.
+allow_flips: false
+loss: dice_focal
+class_weights: [1.0, 1.0, 1.0]
+include_background_loss: false
+focal_gamma: 2.0
+batch_size: 2
+num_workers: 0
+freeze_batchnorm: true
+drop_last: true
+epochs: 150
+patience: 20
+early_stop_monitor: val_iou
+min_delta: 0.001
+lr: 0.0001
+weight_decay: 0.0001
+amp: true
+device: auto
