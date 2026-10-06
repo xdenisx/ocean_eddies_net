@@ -15,12 +15,11 @@
 | DeepLabV3+ с ResNet50 или ResNet101 | `deeplabv3plus_resnet50`, `deeplabv3plus_resnet101` | `smp` — segmentation_models_pytorch |
 | U-Net++ с EfficientNet-B4 или B5 | `unetpp_effb4`, `unetpp_effb5` | `smp` |
 | SegFormer B0, B2, B4 или B5 | `segformer_b0`, `segformer_b2`, `segformer_b4`, `segformer_b5` | `smp`; также доступна `hf` — transformers |
-| SegFormer B2: сокращённое название | `segformer` | То же, что `segformer_b2` |
 | UPerNet со Swin-Tiny или Swin-Small | `upernet_swin_t`, `upernet_swin_s` | `hf` |
 | HRNet W18 или W32 с модулем сегментации из пакета | `hrnet_w18`, `hrnet_w32` | `timm` |
-| Пользовательская TransUNet-подобная сеть | `transunet` | `native` — встроенная реализация |
-| Увеличенная TransUNet-подобная сеть | `sam_vit_unet` | `native`; **не SAM и не MedSAM** |
-| Небольшая сеть для проверки работоспособности на CPU | `tiny_unet` | `native`; служебная модель для тестов |
+| TransUNet | `transunet` | `native` — встроенная реализация |
+| Увеличенная TransUNet-подобная сеть | `sam_vit_unet` | `native`; |
+| Простая сеть для проверки работоспособности на CPU | `tiny_unet` | `native`; служебная модель для тестов |
 
 Все перечисленные сети получают число выходных классов из параметра `class_values`.
 
